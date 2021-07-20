@@ -58,7 +58,16 @@
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://vpescara.github.io/docs/post04-mecanizado-cnc-grupal/</guid>
-      <description>Tutorial Mecanizado para Silla Fresia.</description>
+      <description>Trabajo grupal respecto al proceso CNC.</description>
+    </item>
+    
+    <item>
+      <title>4 - Mecanizado 2,5 Ejes</title>
+      <link>https://vpescara.github.io/docs/post05-mec25/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://vpescara.github.io/docs/post05-mec25/</guid>
+      <description>Tutorial Mecanizado 2,5 ejes usando Silla Fresia.</description>
     </item>
     
   </channel>

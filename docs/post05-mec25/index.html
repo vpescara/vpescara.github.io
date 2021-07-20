@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>4 - Mecanizado 2,5 Ejes - Vincenzo Pescara - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://vpescara.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://vpescara.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://vpescara.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post01/">0 - Fabricación Digital</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post02-planimetria/">1 - Planimetrías</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post03-mecanizado-cnc/">2 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post04-mecanizado-cnc-grupal/">3 - Mecanizado CNC (grupal)</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://vpescara.github.io/docs/post05-mec25/">4 - Mecanizado 2,5 Ejes</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">4 - Mecanizado 2,5 Ejes</h1>
+<div class="content ">
+  <h1 id="mecanizado-25-ejes">Mecanizado 2.5 Ejes</h1>
+<p>Para este encargo utilizamos la técnica de Mecanizado en 2,5 ejes en la maquina CNC del ejercicio anterior.</p>
+<p>El Mecanizado en 2,5 ejes es una técnica que nos permite, tal y como dice el nombre, utilizar las herramientas CNC con uno de los ejes de coordenadas (x,y,z) fijo, mientras que la maquina trabaja en las otras dos direcciones cardinales restantes, de este modo, somos capaces de tallar piezas que de otro modo no seriamos capaces, logrando en este caso por ejemplo, tallar el respaldo del ejercicio &ldquo;Mecanizado CNC&rdquo;.</p>
+<h2 id="ejemplo-mecanizado-en-25-ejes">Ejemplo Mecanizado en 2,5 ejes:</h2>
+<p>Para la demostración de este método terminaremos el respaldo de la Silla Fresia del ejercicio anterior.</p>
+<h4 id="iframe">iFrame:</h4>
+<div>
+    <iframe 
+    src='https://a360.co/36k2C4c'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<h2 id="1-preparar-archivo-fusion360">1. Preparar archivo Fusion360:</h2>
+<p>Para esto usaremos el mismo archivo Fusion360 que el ejericicio anterior, luego tomaremos la pieza correspondiente al respaldo de la silla y la exportaremos tal como se muestra en la siguiente imagen:</p>
+<p><img src="/img/Mec25/CambioObj02.png" alt="Mec2,5"></p>
+<p>Una vez exportado, abrir el nuevo archivo y posicionar el respaldo de manera horizontal y alineando uno de sus laterales con el plano de origen XZ.</p>
+<p><img src="/img/Mec25/Alineado.png" alt="Mec2,5"></p>
+<p>Una vez posicionado, utilizaremos la herramienta de Sketch para realizar el bloque del cual será tallado el respaldo. Para eso realizaremos un cuadrado más grande que el respaldo y usaremos un Extrude para darle volumen.</p>
+<p><img src="/img/Mec25/Plancha.png" alt="Mec2,5"></p>
+<h2 id="2-configuración-fabricación">2. Configuración Fabricación.</h2>
+<p>Una vez lista lo anterior precederemos a Fabricación, seleccionaremos un nuevo Setup y realizaremos las siguientes configuraciones:</p>
+<ol>
+<li>
+<p>Escoger la máquina que vamos a utilizar, en nuestro caso &ldquo;Generic 3-axis&rdquo; y tipo de operación &ldquo;Fresado&rdquo;
+<img src="/img/Mec25/Setup.png" alt="Mec2,5"></p>
+</li>
+<li>
+<p>Definir nuestro punto de partida y orientación de tallado, para eso  seleccionaremos la cara superior del bloque como Eje Z y la arista superior más cercana al eje x como Eje X.
+<img src="/img/Mec25/AlineacionNC.png" alt="Mec2,5"></p>
+</li>
+<li>
+<p>Finalmente, definimos el modelo que queremos tallar.
+<img src="/img/Mec25/modelo.png" alt="Mec2,5"></p>
+</li>
+</ol>
+<h2 id="3-definir-proyección">3. Definir proyección.</h2>
+<p>Para definir el área que queremos que la CNC talle debemos dirigirnos a la sección de Diseño y elegir la opción Proyectar, para esto podemos usar la letra P.</p>
+<p>Una vez la herramienta inicie, escoger la cara superior de nuestro bloque como punto de referencia y definir la geometría que queremos proyectar con el respaldo.</p>
+<p><img src="/img/Mec25/proyectar.png" alt="Mec2,5"></p>
+<p>Si esto se realizó correctamente debería aparecer un cuadrado que delimita el área en la que se encuentra el respaldo dentro de nuestra tabla para tallar.</p>
+<h2 id="4-manufactura">4. Manufactura.</h2>
+<h4 id="1-tallado-adaptativo">1. Tallado Adaptativo</h4>
+<p>Para empezar, debemos ir a la pestaña de Fabricación y escoger en 3D la opción de Adaptativo.
+Luego definiremos la punta que queremos usar en nuestra CNC, en este caso al igual que el ejercicio anterior tomaremos la fresia de 6mm punta plana (la pueden encontrar en la biblioteca de Fusion360).</p>
+<p><img src="/img/Mec25/fresaadaptativo.png" alt="Mec2,5"></p>
+<p>Posteriormente, estableceremos los parámetros de Geometría y Modelo.</p>
+<p>En Geometría escogeremos la opción de Selección en la pestaña de Contorno. Luego definiremos como Contorno el rectangulo que realizamos en el paso 3 gracias a la proyección.</p>
+<p>En Modelo definiremos el respaldo, ya que esta será la forma que después seguirá la CNC al tallar.</p>
+<p><img src="/img/Mec25/Configadap.png" alt="Mec2,5"></p>
+<h5 id="simulación-tallado-adaptativo">Simulación Tallado Adaptativo:</h5>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/AdaptativoFrente.mp4"  type="video/mp4">
+    </video>
+</div>
+<h4 id="2-paralelo">2. Paralelo</h4>
+<p>Para lograr un mayor detalle en la pieza y un acabado más prolijo realizaremos el proceso de Paralelo, este se encuentra en la misma pestaña que encontramos Adaptativo.</p>
+<p>Toda la configuración es igual al proceso del tallado adaptativo, así que realizar el mismo procedimiento.</p>
+<p><img src="/img/Mec25/Paralelo.png" alt="Mec2,5"></p>
+<h5 id="simulación-tallado-paralelo">Simulación Tallado Paralelo:</h5>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/Paralelo.mkv"  type="video/mp4">
+    </video>
+</div>
+<p>Para un aún mejor acabado, realizaremos un giro de 90° en pasadas y cambiaremos la sobrepasada a 2mm para más detalle.</p>
+<p><img src="/img/Mec25/paralela2.png" alt="Mec2,5"></p>
+<h5 id="simulación-tallado-paralelo-90">Simulación Tallado Paralelo 90°:</h5>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/Paralelo90.mkv"  type="video/mp4">
+    </video>
+</div>
+<h2 id="5-corrección-fresia">5. Corrección Fresia.</h2>
+<p>Como habrán notado, la maquina en la simulación se pone de color rojo en ciertos tramos del recorrido. Sucede que debido al largo de la punta colocada la CNC no alcanza a llegar a los sectores más profundos de los bordes del respaldo sin chocar con la tabla para tallar.</p>
+<p>Este choque puede llegar a dañar tanto la pieza que trabajamos como la misma maquina CNC, por lo que para corregirlo debemos cambiar la punta que utilizaremos.</p>
+<p>Para esta corrección cambiaremos el largo de la punta a 40mm, esto debiera ser suficiente para nuestras necesidades.</p>
+<p>Esto se hace en la misma biblioteca que escogimos la fresia anteriormente, realizaremos un duplicado para no perder la punta y en la copia realizaremos el cambio en &ldquo;Longitud por debajo del soporte&rdquo;.</p>
+<p><img src="/img/Mec25/Cambiofresa.png" alt="Mec2,5"></p>
+<p>Una vez realizado todo, el proceso ya no se encuentra con errores y no hay riesgos de daños.</p>
+<h5 id="simulación-proceso-completo">Simulación Proceso Completo:</h5>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/Proceso.mkv"  type="video/mp4">
+    </video>
+</div>
+<h2 id="6-parte-inferior">6. Parte inferior.</h2>
+<p>Para la parte inferior hay que realizar el mismo proceso anterior con la pieza boca abajo.</p>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://vpescara.github.io//img/Mec25inf//Ladoinf01.png');" >
+				      <img itemprop="thumbnail" src="https://vpescara.github.io//img/Mec25inf//Ladoinf01.png" alt="Ladoinf01" />
+				    </div>
+			      <figcaption>
+		          <p>Ladoinf01</p>
+			      </figcaption>
+				    <a href="https://vpescara.github.io//img/Mec25inf//Ladoinf01.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://vpescara.github.io//img/Mec25inf//infadap.png');" >
+				      <img itemprop="thumbnail" src="https://vpescara.github.io//img/Mec25inf//infadap.png" alt="Infadap" />
+				    </div>
+			      <figcaption>
+		          <p>Infadap</p>
+			      </figcaption>
+				    <a href="https://vpescara.github.io//img/Mec25inf//infadap.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://vpescara.github.io//img/Mec25inf//infpara.png');" >
+				      <img itemprop="thumbnail" src="https://vpescara.github.io//img/Mec25inf//infpara.png" alt="Infpara" />
+				    </div>
+			      <figcaption>
+		          <p>Infpara</p>
+			      </figcaption>
+				    <a href="https://vpescara.github.io//img/Mec25inf//infpara.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://vpescara.github.io//img/Mec25inf//infpara90.png');" >
+				      <img itemprop="thumbnail" src="https://vpescara.github.io//img/Mec25inf//infpara90.png" alt="Infpara90" />
+				    </div>
+			      <figcaption>
+		          <p>Infpara90</p>
+			      </figcaption>
+				    <a href="https://vpescara.github.io//img/Mec25inf//infpara90.png" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+<h5 id="simulación-proceso-parte-inferior">Simulación Proceso Parte Inferior:</h5>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/siminf.mkv"  type="video/mp4">
+    </video>
+</div>
+<p><a href="#top">[Volver Arriba]</a></p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
