@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>5 - Simulación y Diseño Generativo - Vincenzo Pescara - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://vpescara.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://vpescara.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://vpescara.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post01/">0 - Fabricación Digital</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post02-planimetria/">1 - Planimetrías</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post03-mecanizado-cnc/">2 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post04-mecanizado-cnc-grupal/">3 - Mecanizado CNC (grupal)</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post05-mec25/">4 - Mecanizado 2,5 Ejes</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://vpescara.github.io/docs/post06-gendis/">5 - Simulación y Diseño Generativo</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">5 - Simulación y Diseño Generativo</h1>
+<div class="content ">
+  <h1 id="simulación-y-diseño-generativo">Simulación y Diseño Generativo</h1>
+<p>Que es????</p>
+<h2 id="ejercicio-simulación-y-diseño-generativo">Ejercicio Simulación y Diseño Generativo:</h2>
+<p>Para practicar y adentrarnos al diseño generativo vamos a empezar con las posibles iteraciones que podemos hacer dentro del ala de un avión construida de la siguiente manera:</p>
+<p><img src="/img/Disgene/AlaComp.png" alt="Diseño_Generativo"></p>
+<p>De modo de plantear correctamente la forma de trabajo dividiremos el proceso en 4 partes principales.</p>
+<h2 id="1-plantear-el-problema">1. Plantear el problema:</h2>
+<p>En primera instancia debemos definir correctamente exactamente que es lo qué queremos modificar. A primera vista podemos notar como esta ala se encuentra formada por una serie de partes iguales en serie, de este modo, nuestro objetivo para este ejercicio será definir una mejor forma de como cortar estas partes ahorrando material y de esta forma reducir tanto el costo como el peso del avión.</p>
+<p><img src="/img/Disgene/01.png" alt="Diseño_Generativo"></p>
+<hr>
+<p>Para esto en primera instancia dejo el archivo sobre el cual se va a poder trabajar el siguiente ejercicio.</p>
+<a class="face-button" href="/descargas/Ala_sola.f3d" download>
+    <div class="face-primary">
+        <span class="icon fa fa-cloud"></span>
+        Descargar
+    </div>
+    <div class="face-secondary">
+        <span class="icon fa fa-hdd-o"></span>
+    </div>
+</a>
+
+
+<hr>
+<h2 id="2-simulación">2. Simulación:</h2>
+<p>Ahora que tenemos nuestra pieza y el problema planteado, vamos a definir en primera instancia los parámetros sobre los cuales tenemos que trabajar, para esto primero vamos a testear cómo se comporta nuestra pieza actual bajo ciertos criterios que por su forma de ensamblaje y la utilidad que tiene debe cumplir.</p>
+<p>Para esto nos vamos a <code>Simulación</code> y generamos un <code>Nuevo Estudio</code>.</p>
+<p><img src="/img/Disgene/02.png" alt="Diseño_Generativo"></p>
+<p>Definimos que queremos hacer un testeo de <code>Tensión estática</code>.</p>
+<p><img src="/img/Disgene/03.png" alt="Diseño_Generativo"></p>
+<p>Y definimos las partes que no deben verse modificadas en la parte de <code>Restricciones</code>, en este caso las partes que se encuentran a los costados que sirven para el anclaje de la pieza en el marco general del ala.</p>
+<p><img src="/img/Disgene/05.png" alt="Diseño_Generativo">
+<img src="/img/Disgene/06.png" alt="Diseño_Generativo"></p>
+<p>Finalmente, definimos el lado por el cual aplicaremos una <code>Carga</code>. Para esta simulación decidiremos una carga de 1000 N por la parte inferior de la pieza, simulando de este modo la fuerza que se le ejercería en un vuelo.</p>
+<p><img src="/img/Disgene/Carga.png" alt="Diseño_Generativo"></p>
+<p>Finalmente, simulamos el procedimiento para ver en qué sectores recibirá más o menos daño la pieza.</p>
+<p><img src="/img/Disgene/09.png" alt="Diseño_Generativo">
+<img src="/img/Disgene/11.png" alt="Diseño_Generativo"></p>
+<h2 id="3-propuesta-de-diseño-generativo">3. Propuesta de Diseño Generativo:</h2>
+<h4 id="31--diseño-de-partes-necesarias">3.1- Diseño de partes necesarias.</h4>
+<p>Ahora bien, para hacer nuestro diseño generativo primero vamos a tener que modelar todas las características claves que debe tener la pieza de nuestra ala. En este caso serán 3:</p>
+<ul>
+<li>Los 2 orificios interiores.</li>
+<li>las zonas de acople que identificamos en la etapa de <code>Restricciones</code>.</li>
+<li>La forma o marco general del objeto.7</li>
+</ul>
+<p>Partiendo con los 2 orificios interiores, utilizando <code>Sketch</code> generamos el contoeno de éstos, luego usando el comando <code>Extruir</code> crearemos los nuevos objetos para definir nuestras restricciones posteriores.</p>
+<p><img src="/img/Disgene/12.png" alt="Diseño_Generativo">
+<img src="/img/Disgene/13.png" alt="Diseño_Generativo">
+<img src="/img/Disgene/14.png" alt="Diseño_Generativo"></p>
+<p>Ahora, para el acople de la pieza, utilizando <code>Sketch</code> realizamos un <code>Desfase</code> o <code>Offset</code> generaremos un marco exterior, simulando de este modo el marco general del ala y poder colocar las restricciones necesarias para los encajes en la pieza.</p>
+<p>Luego con un <code>Extruir</code> le damos volumen a la parte.</p>
+<p><img src="/img/Disgene/15.png" alt="Diseño_Generativo">
+<img src="/img/Disgene/16.png" alt="Diseño_Generativo"></p>
+<p>Finalmente, usando los mismos comandos del paso anterior, generamos la forma general de la pieza.</p>
+<p>Hay que recordar que a diferencia que el paso anterior el <code>Offset</code> debe ser interior, no exterior.</p>
+<p><img src="/img/Disgene/18.png" alt="Diseño_Generativo">
+<img src="/img/Disgene/19.png" alt="Diseño_Generativo"></p>
+<h4 id="32--definición-de-restricciones-y-parámetros">3.2- Definición de Restricciones y Parámetros.</h4>
+<p>Teniendo nuestras partes diseñadas, estamos listos para definir las ultimas restricciones antes de empezar nuestro diseño generativo.</p>
+<p>Primero tenemos el <code>Espacio de diseño</code> que queremos, pondremos las piezas correspondientes a los orificios interiores y la del marco exterior como <code>Geometría de obstáculo</code>, haciendo que el resultado final deje esos espacios libres a la hora de generar sus propuestas.</p>
+<p><img src="/img/Disgene/20.png" alt="Diseño_Generativo"></p>
+<p>Luego definimos como <code>Conservar gerometría</code> el marco interior, estableciendo que queremos que mantenga la forma general de la piza inicial.</p>
+<p><img src="/img/Disgene/21.png" alt="Diseño_Generativo"></p>
+<p>Después, definimos como <code>Forma inicial</code> el cuerpo de la pieza origen, de este modo el programa sabe que espacio es el que tiene que rellenar con material y cuál es la forma general en la que se basa nuestro proyecto.</p>
+<p><img src="/img/Disgene/22.png" alt="Diseño_Generativo"></p>
+<p>Finalmente, al igual que al principio del ejercicio, definimos las <code>Restricciones</code> y la <code>Carga</code> que debe tener nuestra pieza.</p>
+<p><img src="/img/Disgene/23.png" alt="Diseño_Generativo">
+<img src="/img/Disgene/24.png" alt="Diseño_Generativo"></p>
+<h4 id="33--diseño-generativo">3.3- Diseño Generativo.</h4>
+<p>Teniendo todo listo, solo nos queda definir de qué modo queremos que el programa calcule nuestro diseño generativo.</p>
+<p>Para esto nos iremos a <code>Objetivos</code>, colocaremos Minimizas masa y un coeficiente de seguridad de 2.0.</p>
+<p><img src="/img/Disgene/25.png" alt="Diseño_Generativo"></p>
+<p>Luego en <code>Fabricación</code>, seleccionaremos los tipos de formas que queremos que se genere nuestra pieza, para esta ocasión escogeremos Sin restricciones, Aditivo y Corte de 2 ejes.</p>
+<p><img src="/img/Disgene/26.png" alt="Diseño_Generativo"></p>
+<p>Escogemos los materiales que queremos, en este caso &ldquo;Titanio 6Al-4V&rdquo;, &ldquo;Aluminio AlSi10Mg&rdquo; y &ldquo;Acero inoxidable 17-4 PH&rdquo;</p>
+<p><img src="/img/Disgene/27.png" alt="Diseño_Generativo"></p>
+<p>Finalmente, realizamos <code>Generar</code> y esperamos a que Fusion nos de el resultado de nuestro proceso.</p>
+<p><img src="/img/Disgene/Generar.png" alt="Diseño_Generativo"></p>
+<hr>
+<p>Como extra podemos poner una previsualización de cómo se verá nuestro diseño generativo a modo de darnos una idea de que esperarnos.</p>
+<p><img src="/img/Disgene/28.png" alt="Diseño_Generativo"></p>
+<hr>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
