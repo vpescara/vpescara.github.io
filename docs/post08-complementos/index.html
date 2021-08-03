@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>7- Complementos - Vincenzo Pescara - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://vpescara.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://vpescara.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://vpescara.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post01/">0 - Fabricación Digital</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post02-planimetria/">1 - Planimetrías</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post03-mecanizado-cnc/">2 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post04-mecanizado-cnc-grupal/">3 - Mecanizado CNC (grupal)</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post05-mec25/">4 - Mecanizado 2,5 Ejes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post06-gendis/">5 - Simulación y Diseño Generativo</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post07-impresion3d/">6- Impresión 3D</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://vpescara.github.io/docs/post08-complementos/">7- Complementos</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">7- Complementos</h1>
+<div class="content ">
+  <h1 id="creación-de-molde">Creación de Molde.</h1>
+<p>Para crear un molde vamos a tener que seguir los siguientes pasos:</p>
+<h2 id="1--crear-objeto-final">1- Crear objeto final.</h2>
+<p>La forma más fácil de crear un molde consiste en la creación digital del objeto final que deseamos, de este modo, partiremos generando el diseño base de nuestro objeto, en este caso la construcción de un cenicero.</p>
+<p>Partiremos diseñando el perfil de uno de los lados de nuestro cenicero:</p>
+<p><img src="/img/Comple/01.png" alt="Complementos"></p>
+<p>Luego, utilizaremos <code>Revolve</code> para darle volumen a la figura de manera pareja. Gracias a esto ya tendremos el modelo base el cual podremos modificar y editar a gusto.</p>
+<p><img src="/img/Comple/02.png" alt="Complementos"></p>
+<p>Seguiremos utilizando el comando <code>Shell</code> en la cara superior para darle la profundidad que necesitara.</p>
+<p><img src="/img/Comple/03.png" alt="Complementos"></p>
+<p>Luego podemos agregar detalles, en este caso partiremos por agregar el cilindro del medio que se utiliza para apagar los cigarros. Para ello utilizaremos el comando <code>Cilindro</code> y lo colocaremos en el centro de nuestro cenicero, las dimensiones pueden ser a gusto.</p>
+<p><img src="/img/Comple/04.png" alt="Complementos"></p>
+<p>Y finalizaremos con un <code>FilletEdge</code> para redondear un poco los bordes y que sea más cómodo tanto para el manejo postproducción y la facilidad de que el relleno llegue a todos lados del molde.</p>
+<p><img src="/img/Comple/05.png" alt="Complementos"></p>
+<h2 id="2--crear-molde">2- Crear Molde.</h2>
+<p>Ahora, para la creación de nuestro molde en primera instancia necesitamos identificar como podría funcionar. En este caso utilizaremos un molde simple de 2 partes, una inferior que servirá para hacer la forma exterior del cenicero y una superior que nos proporcionará los detalles interiores.</p>
+<p>Partiremos con la parte inferior:</p>
+<p>Iniciaremos con un cuadrado en <code>Sketch</code> el cual debe ser un poco más grande que el tamaño de nuestro objeto a modo de poder contenerlo.</p>
+<p><img src="/img/Comple/06.png" alt="Complementos"></p>
+<p>Luego usando <code>Extrude</code> le daremos volumen a nuestro cuadrado a modo que sobrepase el cenicero.</p>
+<p><img src="/img/Comple/07.png" alt="Complementos"></p>
+<p>Una vez la base inferior este lista, tendremos que posicionar nuestro objeto en el borde de nuestro molde, tal y como muestra la siguiente imagen.</p>
+<p>Esto se hace a modo de poder dividir el espacio interior y el exterior de nuestro cenicero.</p>
+<p><img src="/img/Comple/08.png" alt="Complementos"></p>
+<p>Ahora, utilizaremos el comando <code>Combine</code> seleccionando el &ldquo;cuerpo de destino&rdquo; lo que será nuestro molde y como &ldquo;cuerpo de herramienta&rdquo; nuestro objeto. Luego utilizaremos la opción <code>Cut</code> para generar los relieves que necesitamos.</p>
+<p>Importante escoger la opción de &ldquo;Conservar Herramienta&rdquo; ya que de otra manera perderemos nuestro objeto final.</p>
+<p>Una vez teniendo nuestras dos partes separe la interior hacia arriba para poder trabajar más cómodamente en ella.</p>
+<p><img src="/img/Comple/09.png" alt="Complementos"></p>
+<p>Parte superior:</p>
+<p>Hasta el momento ya tenemos nuestro molde inferior terminado, ahora finalizaremos el superior de manera muy sencilla.</p>
+<p>Para ello, al igual que lo hicimos en un principio generaremos un cuadrado mayor que el objeto (recomiendo del mismo tamaño que el que se realizó al inicio), luego generaremos nuestro solido con <code>Extrude</code> y usando <code>Combine</code> lo juntaremos con nuestra parte interior.</p>
+<p>Para este caso es necesario escoger la opción &ldquo;Unir&rdquo; a la hora de realizar el <code>Combine</code>.</p>
+<p><img src="/img/Comple/10.png" alt="Complementos"></p>
+<p>Al finalizar uno deberia quedarse con 3 objetos finales:</p>
+<ul>
+<li>El cenicero que modelo en un principio.</li>
+<li>El molde inferior.</li>
+<li>El molde superior.</li>
+</ul>
+<div>
+    <iframe 
+    src='https://a360.co/3zYkGOe'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<hr>
+<h2 id="exportar-para-imprimir">Exportar para imprimir.</h2>
+<p>Finalmente, para exportar nuestros moldes para ser impresos, nos iremos a la ventana de &ldquo;Herramientas&rdquo; o &ldquo;Tools&rdquo; y escogeremos <code>Impresión en 3D</code>.</p>
+<p>Para la configuración recomiendo el formato STL, &ldquo;Refinado&rdquo; en Alto y en &ldquo;Salida&rdquo; dejar en blanco para que le pida ruta de guardado al finalizar.</p>
+<p><img src="/img/imp3d/02.png" alt="Complementos"></p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

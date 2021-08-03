@@ -76,7 +76,25 @@
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://vpescara.github.io/docs/post06-gendis/</guid>
-      <description>Tutorial Mecanizado 2,5 ejes usando Silla Fresia.</description>
+      <description>Ejercicio de simulación de Diseño Generativo.</description>
+    </item>
+    
+    <item>
+      <title>6- Impresión 3D</title>
+      <link>https://vpescara.github.io/docs/post07-impresion3d/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://vpescara.github.io/docs/post07-impresion3d/</guid>
+      <description>Introduccion a la impresión 3D.</description>
+    </item>
+    
+    <item>
+      <title>7- Complementos</title>
+      <link>https://vpescara.github.io/docs/post08-complementos/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://vpescara.github.io/docs/post08-complementos/</guid>
+      <description>Ejercicios complementarios al curso.</description>
     </item>
     
   </channel>

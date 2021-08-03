@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>6- Impresión 3D - Vincenzo Pescara - Taller Fabricación 2021</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://vpescara.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.a32658f2eedb9bb852f8513925cb445e40633983f1ff54349b037dd04eafa2fa.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://vpescara.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://vpescara.github.io/"><img alt="Logo" src="/images/logo-uai.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Docs</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post01/">0 - Fabricación Digital</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post02-planimetria/">1 - Planimetrías</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post03-mecanizado-cnc/">2 - Mecanizado CNC</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post04-mecanizado-cnc-grupal/">3 - Mecanizado CNC (grupal)</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post05-mec25/">4 - Mecanizado 2,5 Ejes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post06-gendis/">5 - Simulación y Diseño Generativo</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://vpescara.github.io/docs/post07-impresion3d/">6- Impresión 3D</a>
+    </li>
+    
+    <li class="">
+      <a href="https://vpescara.github.io/docs/post08-complementos/">7- Complementos</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">6- Impresión 3D</h1>
+<div class="content ">
+  <h1 id="cómo-funciona">¿Cómo funciona?</h1>
+<p>La impresión 3D es un proceso de fabricación aditivo, es decir, mediante a capas de material son capaces de convertir diseños digitales en objetos fisicos.</p>
+<p>El proceso funciona en primer lugar mediante la existencia de un archivo de diseño 3D digital (un plano), luego esta información se transforma gracias a diversos programas existentes en Código G, el cual se puede expresar como:</p>
+<blockquote>
+<p>Lenguaje mediante el cual las personas pueden decir a maquinas CNC qué hacer y cómo hacerlo.</p>
+</blockquote>
+<p>Es decir, el Código G es la expresion en lenguaje de computadora de el diseño en 3D, de este modo, las maquinas son capaces de interpretar el diseño en una serie de coordenadas por las cuales debera pasar a modo de poder fabricarlo.</p>
+<p>Hoy en dia existe un gran numero de impresoras 3D, por lo que cual obtener dependera de tanto las necesidades que tengamos como el espacio disponible, dentro de las opciones cabe destacar que existes:</p>
+<ul>
+<li>Impresoras 3D por Estereolitografía (SLA)</li>
+<li>Impresoras 3D de Sinterización Selectiva por Láser (SLS)</li>
+<li>Impresoras 3D por Inyección</li>
+<li>Impresión por deposición de material fundido (FDM)</li>
+</ul>
+<p><img src="/img/imp3d/imp3d2.jpg" alt="Impresion_3D"></p>
+<h1 id="ultimaker-cura">Ultimaker CURA.</h1>
+<p><img src="/img/imp3d/Cura.jpg" alt="Impresion_3D"></p>
+<p>Para el desarrollo de nuestro ejercicio de impresión 3D, vamos a utilizar el programa &ldquo;Ultimaker CURA&rdquo;, ya que, es el software de impresión 3D más popular del mundo y es de código abierto, es decir, los usuarios pueden contribuir a la mejora constante de este programa.</p>
+<hr>
+<h1 id="ejercicio-impresión-3d">Ejercicio Impresión 3D.</h1>
+<h3 id="1--preparación-cura">1- Preparación CURA.</h3>
+<p>Lo primero que hay que hacer antes de partir trabajando es configurar correctamente la impresora y el material que vamos a utilizar dentro de nuestro software CURA, para eso en primer lugar nos vamos a la opción  de <code>Add Printer</code> en la equina superior izquierda, luego en el sector de <code>Add a non-networked printer</code> escoger la impresora &ldquo;Creality Ender - 3&rdquo;.</p>
+<p><img src="/img/imp3d/03.png" alt="Impresion_3D"></p>
+<p>Como segunda parte, escogeremos el material y boquilla de nuestra impresora.</p>
+<p>Para el material escogeremos nos iremos a:  eSun -&gt; PLA+. Aquí podrán escoger el color que más les guste, en este caso escogeremos el &ldquo;Purple PLA+&rdquo;.</p>
+<p>Por otro lado, la boquilla será la de 0,4mm que debiera venir como predeterminada, igualmente cerciorarse que sea la correcta.</p>
+<p><img src="/img/imp3d/04.png" alt="Impresion_3D"></p>
+<h3 id="2--preparación-objeto">2- Preparación Objeto.</h3>
+<p>Ahora que tenemos nuestros parámetros listos importaremos en modelo que deseamos imprimir, para este ejemplo un cenicero modelado con anterioridad que podrán ver en la sección de “Complementos” de esta página.</p>
+<p>Para importar nuestro objeto procederemos a <code>Importar</code> el cual es el icono de la carpeta en la parte superior izquierda, luego buscar en su computador el o los modelos que quieran imprimir y listo, debieran aparecer en la impresora tal cual como la imagen siguiente.</p>
+<p><img src="/img/imp3d/05.png" alt="Impresion_3D">
+(si el modelo es muy grande aparecerá una parte en la impresora y la otra afuera)</p>
+<p>Como se puede observar, una de las piezas se encuentra boca abajo, por lo que tenemos dos opciones:
+1- Modelar soportes para la pieza y luego retirarlos.
+2- Rotar la pieza.</p>
+<p>Para esta ocasión como es un problema sencillo rotaremos la pieza, para ello la seleccionaremos e iremos a la 3 opción de la parte izquierda de la pantalla. Luego usando las flechas que surgirán en el modelo (como aparecen en la foto siguiente) lo rotaremos 180° en su eje horizontal (en este caso las flechas verdes).</p>
+<p><img src="/img/imp3d/06.png" alt="Impresion_3D"></p>
+<p>Finalmente, como último paso antes de imprimir nuestro modelo, nos iremos a las propiedades de la parte superior derecha y en <code>Quality</code> cambiaremos &ldquo;Layer Height&rdquo; de 0,1mm a 0,3mm.</p>
+<p><img src="/img/imp3d/07.png" alt="Impresion_3D"></p>
+<p><a href="#top">[Volver Arriba]</a></p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.eaf147370baecdd07c022597db631f99cab1c9cd6479de586f30327a568d6a0f.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>
