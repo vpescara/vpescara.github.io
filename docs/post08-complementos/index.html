@@ -194,6 +194,54 @@
 <p>Finalmente, para exportar nuestros moldes para ser impresos, nos iremos a la ventana de &ldquo;Herramientas&rdquo; o &ldquo;Tools&rdquo; y escogeremos <code>Impresión en 3D</code>.</p>
 <p>Para la configuración recomiendo el formato STL, &ldquo;Refinado&rdquo; en Alto y en &ldquo;Salida&rdquo; dejar en blanco para que le pida ruta de guardado al finalizar.</p>
 <p><img src="/img/imp3d/02.png" alt="Complementos"></p>
+<hr>
+<p><a href="#top">[Volver Arriba]</a></p>
+<h1 id="modelado-3d-de-superficies">Modelado 3D de Superficies.</h1>
+<p>En Fusion360 existe la opción de crear nuestros diseños mediante la herramienta de Superficies, de este modo, seremos capaces de crear figuras más libremente y nos facilitara la edición de este si a futuro quisiéramos hacerla.</p>
+<p>La idea del trabajo de superficies es generar varias operaciones que de manera sencilla y ordenada generen un diseño final.</p>
+<p>Para adentrarnos a al mundo del diseño en superficies de Fusion360 realizaremos una demostración mediante el diseño de una taza.</p>
+<h2 id="paso-a-paso">Paso a paso.</h2>
+<p>En primer lugar, nos dirigiremos a la ventana de <code>Superficie</code> y realizaremos un primer <code>Sketch</code> de la base de la taza que queremos realizar.</p>
+<p><img src="/img/comple2/01.png" alt="Complementos"></p>
+<p>Luego, usando el <code>Plano de desfase</code>, crearemos un nuevo plano unos 12 cm más alto y realizaremos el <code>Sketch</code> de la parte superior.</p>
+<p><img src="/img/comple2/02.png" alt="Complementos"></p>
+<p>Una vez listo eso, utilizaremos el comando <code>Loft</code> o <code>Solevación</code> para unir nuestros dos bocetos.</p>
+<p><img src="/img/comple2/03.png" alt="Complementos"></p>
+<p>Con nuestro cuerpo base listo, empezaremos con el diseño de nuestro mango, empezando con un boceto de la forma que deseamos y luego realizando un <code>Extrude</code> para ambos lados.</p>
+<p><img src="/img/comple2/04.png" alt="Complementos">
+<img src="/img/comple2/05.png" alt="Complementos"></p>
+<p>Con el diseño de lo que va a ser próximamente el mango listo nos moveremos a la parte superior de nuestra taza, donde nuevamente usaremos el comando <code>Sketch</code> para realizar la forma de lo que luego será el agujero que contendrá nuestro líquido.</p>
+<p><img src="/img/comple2/06.png" alt="Complementos"></p>
+<p>De igual modo que el mango realizaremos un <code>Extrude</code> pero cerciorándonos que su altura sea un poco menos que la altura total de nuestra taza.</p>
+<p><img src="/img/comple2/07.png" alt="Complementos"></p>
+<p>Ahora realizaremos los agujeros necesarios, partiremos con nuestro mango, utilizando el comando <code>Divide</code> escogeremos la taza como &ldquo;Cuerpo para dividir&rdquo; mientras que el modelo del mango será &ldquo;Herramienta de división&rdquo;.</p>
+<p><img src="/img/comple2/08.png" alt="Complementos"></p>
+<p>Luego, usando el comando <code>Cut</code> removeremos las partes sobrantes de nuestro mango.</p>
+<p>Hay que recordar que hay que eliminar u ocultar las partes que &ldquo;unen&rdquo; el agujero creado para el mango.</p>
+<p><img src="/img/comple2/09.png" alt="Complementos"></p>
+<p>Ahora, para empezar a cerrar nuestro objeto, realizaremos un <code>Patch</code> en la parte superior.</p>
+<p><img src="/img/comple2/10.png" alt="Complementos"></p>
+<p>Y seguiremos con un <code>Divide</code> usando el agujero superior como referencia, de este modo cerraremos toda la parte de arriba de nuestra taza, pero dejando el espacio contenedor.</p>
+<p><img src="/img/comple2/11.png" alt="Complementos"></p>
+<p>Para los <code>Patch</code> inferiores recordar hacerlos tanto para la parte exterior de la taza como para el agujero interior, sino el paso siguiente no funcionara correctamente.</p>
+<p><img src="/img/comple2/12.png" alt="Complementos"></p>
+<p>Ahora que tenemos todas las caras que necesitamos construidas, procederemos a seleccionar la figura completa y realizar el comando <code>Sew</code> o <code>Coser</code> para unir todas las partes en un solo objeto sólido.</p>
+<p><img src="/img/comple2/13.png" alt="Complementos"></p>
+<p>Finalmente, como toque final realizaremos un <code>FilletEdge</code> o <code>Empalme</code> para dejar bordes más suaves al tacto. En este caso se realizó un Fillet de 3mm pero puede variar según gusto y capacidad del modelo.</p>
+<p><img src="/img/comple2/14.png" alt="Complementos"></p>
+<p>El modelo final para esta ocasión quedo de la siguiente manera:</p>
+<div>
+    <iframe 
+    src='https://a360.co/3yl9t9X'
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+<p><a href="#top">[Volver Arriba]</a></p>
 
 </div>
 </div>
