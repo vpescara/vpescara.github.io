@@ -97,5 +97,14 @@
       <description>Ejercicios complementarios al curso.</description>
     </item>
     
+    <item>
+      <title>8- Examen: Materiales</title>
+      <link>https://vpescara.github.io/docs/examen_mat/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://vpescara.github.io/docs/examen_mat/</guid>
+      <description>Pruebas con biomateriales para examen final.</description>
+    </item>
+    
   </channel>
 </rss>
