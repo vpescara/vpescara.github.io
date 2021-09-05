@@ -115,5 +115,14 @@
       <description>Modelo inicial para examen.</description>
     </item>
     
+    <item>
+      <title>10- Examen: Entrega Final</title>
+      <link>https://vpescara.github.io/docs/examen-final/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://vpescara.github.io/docs/examen-final/</guid>
+      <description>Examen Final.</description>
+    </item>
+    
   </channel>
 </rss>
